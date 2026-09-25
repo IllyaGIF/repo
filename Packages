@@ -1,0 +1,14 @@
+Package: com.dante.internetfixer
+Name: Dante
+Version: 1.2
+Architecture: iphoneos-arm
+Description: Dante AmneziaWG/WARP network tunnel for jailbroken iOS 3.1.3 ARMv6
+Maintainer: qwertyu1opz
+Section: Utilities
+Installed-Size: 4252
+Filename: debs/dante_1.2_iphoneos-arm.deb
+Size: 1677860
+MD5sum: a47163698c0f7cd0769094da749e9d0e
+SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
+SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
+

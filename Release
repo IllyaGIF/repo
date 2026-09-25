@@ -1,0 +1,8 @@
+Origin: Illya Repository
+Label: Illya Repository
+Suite: stable
+Version: 1.0
+Codename: ios3
+Architectures: iphoneos-arm
+Components: main
+Description: Cydia repository for legacy iOS devices
