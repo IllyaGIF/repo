@@ -12,3 +12,20 @@ MD5sum: a47163698c0f7cd0769094da749e9d0e
 SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
 SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
 
+Package: dev.illyagif.onegram
+Name: Onegram
+Version: 1.3
+Architecture: iphoneos-arm
+Description: Onegram - Telegram client for legacy iOS.
+ Installs Onegram as a system app in /Applications.
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Social
+Depends: firmware (>= 4.3)
+Installed-Size: 68540
+Filename: debs/dev.illyagif.onegram_1.3_iphoneos-arm.deb
+Size: 36175748
+MD5sum: c0810d06a5e30c59ea1df490d82a10a2
+SHA1: ef6cc452c4fd44d4a2f4a9e7832a6e4c24383a5d
+SHA256: 631bc35cbc9ca244e66a03f7b58fc435a75060599f1c7625385ae4183e8b6a0e
+

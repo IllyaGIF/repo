@@ -20,12 +20,19 @@ for deb in debs/*.deb; do
         exit 1
     fi
 
-    control="$(
-        ar -p "$deb" "$member" |
-        tar -xOf - ./control 2>/dev/null ||
-        ar -p "$deb" "$member" |
-        tar -xOf - control
-    )"
+    case "$member" in
+        *.gz)  decomp="gzip -dc" ;;
+        *.xz)  decomp="xz -dc" ;;
+        *.lzma) decomp="xz --format=lzma -dc" ;;
+        *.bz2) decomp="bzip2 -dc" ;;
+        *.zst) decomp="zstd -dc" ;;
+        *)     decomp="cat" ;;
+    esac
+
+    tmpdir="$(mktemp -d)"
+    ar -p "$deb" "$member" | $decomp | tar -xf - -C "$tmpdir"
+    control="$(cat "$tmpdir/control")"
+    rm -rf "$tmpdir"
 
     printf '%s\n' "$control" |
         awk '
@@ -37,14 +44,20 @@ for deb in debs/*.deb; do
         ' >> Packages
 
     filename="debs/$(basename "$deb")"
-    size="$(stat -f '%z' "$deb")"
-    md5sum="$(md5 -q "$deb")"
-    sha1="$(shasum -a 1 "$deb" | awk '{print $1}')"
-    sha256="$(shasum -a 256 "$deb" | awk '{print $1}')"
+    size="$(wc -c < "$deb" | tr -d ' ')"
+    if command -v md5sum >/dev/null 2>&1; then
+        md5="$(md5sum "$deb" | awk '{print $1}')"
+        sha1="$(sha1sum "$deb" | awk '{print $1}')"
+        sha256="$(sha256sum "$deb" | awk '{print $1}')"
+    else
+        md5="$(md5 -q "$deb")"
+        sha1="$(shasum -a 1 "$deb" | awk '{print $1}')"
+        sha256="$(shasum -a 256 "$deb" | awk '{print $1}')"
+    fi
 
     printf 'Filename: %s\n' "$filename" >> Packages
     printf 'Size: %s\n' "$size" >> Packages
-    printf 'MD5sum: %s\n' "$md5sum" >> Packages
+    printf 'MD5sum: %s\n' "$md5" >> Packages
     printf 'SHA1: %s\n' "$sha1" >> Packages
     printf 'SHA256: %s\n\n' "$sha256" >> Packages
 done
