@@ -1,109 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Illya Repository</title>
-
 <style>
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    background: #dbe2ed;
-    color: #222;
-    margin: 0;
-    padding: 20px;
-}
-
-.box {
-    max-width: 560px;
-    margin: 30px auto;
+html {
+    height: 100%;
     background: #fff;
-    border: 1px solid #aaa;
-    border-radius: 8px;
-    padding: 18px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    -webkit-text-size-adjust: 100%;
 }
-
-h1 {
-    font-size: 24px;
-    margin: 0 0 12px;
+body {
+    height: 100%;
+    margin: 0;
+    background: #fff;
+    color: #3c3b39;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-p {
-    line-height: 1.4;
+.page {
+    position: relative;
+    height: 100%;
+    min-height: 440px;
+    overflow: hidden;
+    background: #fff;
 }
-
-code {
-    display: block;
-    word-break: break-all;
+.guide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
     background: #f3f3f3;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 8px;
 }
-
-.add-cydia {
+.guide-one { left: 6.5%; }
+.guide-two { left: 31.8%; }
+.guide-three { left: 54.8%; }
+.guide-four { left: 78.8%; }
+.guide-five { left: 97.5%; }
+.mark {
+    position: absolute;
+    z-index: 5;
+    top: 52px;
+    left: 6.5%;
     display: block;
-    text-align: center;
-    margin-top: 18px;
-    padding: 12px 16px;
-
-    background: #4f75a3;
-    color: #fff;
-
+    width: 34px;
+    height: 34px;
     text-decoration: none;
-    font-size: 18px;
+}
+.mark-dark {
+    position: absolute;
+    top: 8px;
+    left: -5px;
+    width: 11px;
+    height: 11px;
+    background: #252525;
+}
+.mark-red {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    width: 11px;
+    height: 11px;
+    background: #ec1230;
+}
+.hero {
+    position: absolute;
+    z-index: 2;
+    top: 39%;
+    left: 10.5%;
+    right: 6%;
+}
+h1 {
+    margin: 0;
+    font-size: 86px;
     font-weight: bold;
-
-    border: 1px solid #365574;
-    border-radius: 7px;
-
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    white-space: nowrap;
 }
-
-.add-cydia:active {
-    background: #385d86;
+.repository-url {
+    display: inline-block;
+    color: #3c3b39;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
 }
-
-.footer {
-    margin-top: 18px;
-    font-size: 12px;
-    color: #777;
-    text-align: center;
+.repository-url:active,
+.repository-url:focus {
+    color: #3c3b39;
+}
+.red-dot {
+    display: inline-block;
+    width: 0.14em;
+    height: 0.14em;
+    margin-left: 0.09em;
+    vertical-align: baseline;
+    background: #ed102b;
+}
+.tagline {
+    margin: 18px 0 0 2px;
+    color: #858585;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.cta {
+    display: inline-block;
+    margin: 27px 0 0 2px;
+    padding: 0 0 7px;
+    border-bottom: 1px solid #e81932;
+    color: #3c3b39;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+}
+.cta:active,
+.cta:hover {
+    color: #e81932;
+}
+.copy-status {
+    display: block;
+    margin: 15px 0 0 2px;
+    min-height: 16px;
+    color: #999;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 700px) {
+    .mark { top: 36px; left: 6.5%; }
+    .hero { top: 38%; left: 8%; right: 7%; }
+    h1 { font-size: 44px; letter-spacing: -1px; }
+    .tagline { margin-top: 17px; font-size: 13px; letter-spacing: 1px; }
+    .cta { margin-top: 23px; font-size: 10px; }
+}
+@media screen and (max-width: 420px) {
+    .page { min-height: 360px; }
+    .mark { top: 29px; left: 6.5%; }
+    .hero { top: 38%; left: 6%; right: 6%; }
+    h1 { font-size: 21px; letter-spacing: -0.35px; }
+    .tagline { margin-top: 17px; font-size: 11px; letter-spacing: 0.6px; }
+    .cta { margin-top: 23px; font-size: 10px; }
 }
 </style>
-
 </head>
-
 <body>
-
-<div class="box">
-
-<h1>Illya Repository</h1>
-
-<p>
-Cydia repository for legacy iOS devices.
-</p>
-
-<p>
-Add this source in Cydia:
-</p>
-
-<code>https://illyagif.github.io/repo/</code>
-
-<a
-    class="add-cydia"
-    href="cydia://url/https://cydia.saurik.com/api/share#?source=https://illyagif.github.io/repo/"
->
-    Add to Cydia
-</a>
-
-<div class="footer">
-Illya Repository
+<div class="page">
+    <span class="guide guide-one"></span>
+    <span class="guide guide-two"></span>
+    <span class="guide guide-three"></span>
+    <span class="guide guide-four"></span>
+    <span class="guide guide-five"></span>
+    <a class="mark" href="https://github.com/IllyaGIF" title="IllyaGIF on GitHub" aria-label="IllyaGIF on GitHub"><span class="mark-dark"></span><span class="mark-red"></span></a>
+    <div class="hero" id="hero">
+        <h1 id="heading"><a class="repository-url" id="repository-url" href="https://illyagif.github.io/repo/" title="Copy repository URL" onclick="return copyRepository();">https://illyagif.github.io/repo/<span class="red-dot"></span></a></h1>
+        <p class="tagline">Original cydia repository IllyaGIF.</p>
+        <a class="cta" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://illyagif.github.io/repo/">ADD TO CYDIA &#8599;</a>
+        <span class="copy-status" id="copy-status" aria-live="polite">TAP THE URL TO COPY</span>
+    </div>
 </div>
-
-</div>
-
+<script>
+function fitHeading() {
+    var hero = document.getElementById('hero');
+    var heading = document.getElementById('heading');
+    var link = document.getElementById('repository-url');
+    if (!hero || !heading || !link) return;
+    var maxSize = document.documentElement.clientWidth <= 420 ? 32 : 86;
+    heading.style.fontSize = maxSize + 'px';
+    var available = hero.clientWidth;
+    var actual = link.offsetWidth;
+    if (actual > available && actual > 0) {
+        var size = Math.floor(maxSize * available / actual);
+        if (size < 10) size = 10;
+        heading.style.fontSize = size + 'px';
+        while (size > 10 && link.offsetWidth > available) {
+            size--;
+            heading.style.fontSize = size + 'px';
+        }
+    }
+}
+function setCopyStatus(message) {
+    var status = document.getElementById('copy-status');
+    if (status) status.innerHTML = message;
+}
+function copyOld(url) {
+    var field = document.createElement('textarea');
+    field.value = url;
+    field.style.position = 'absolute';
+    field.style.left = '-9999px';
+    field.style.top = '0';
+    document.body.appendChild(field);
+    field.focus();
+    field.select();
+    var success = false;
+    try {
+        if (document.execCommand) success = document.execCommand('copy');
+    } catch (error) {}
+    document.body.removeChild(field);
+    if (success) {
+        setCopyStatus('COPIED TO CLIPBOARD');
+    } else {
+        window.prompt('Select and copy the repository URL:', url);
+        setCopyStatus('SELECT AND COPY THE URL');
+    }
+}
+function copyRepository() {
+    var url = 'https://illyagif.github.io/repo/';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+            navigator.clipboard.writeText(url).then(function () {
+                setCopyStatus('COPIED TO CLIPBOARD');
+            }, function () {
+                copyOld(url);
+            });
+            return false;
+        } catch (error) {}
+    }
+    copyOld(url);
+    return false;
+}
+fitHeading();
+window.onresize = fitHeading;
+window.onload = fitHeading;
+</script>
 </body>
 </html>
