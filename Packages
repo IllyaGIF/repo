@@ -1,0 +1,44 @@
+Package: com.dante.internetfixer
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: qwertyu1opz
+Installed-Size: 4252
+Filename: debs/dante_1.2_iphoneos-arm.deb
+Size: 1677860
+MD5sum: a47163698c0f7cd0769094da749e9d0e
+SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
+SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
+Section: Utilities
+Description: Dante AmneziaWG/WARP network tunnel for jailbroken iOS 3.1.3 ARMv6
+Name: Dante
+
+Package: dev.illyagif.onegram
+Version: 1.4.2-144
+Architecture: iphoneos-arm
+Maintainer: IllyaGIF
+Depends: firmware (>= 3.1.3), uikittools
+Filename: debs/onegram_1.4.2-144_iphoneos-arm.deb
+Size: 101775432
+MD5sum: d92b62420d88348ddb39300270982437
+SHA1: b5edf6d36240ad9f086881584c44bf3069d2df14
+SHA256: 5b4256ad35f9a1354fe11a826946910c7cbb82c98d67c26618320c534b8db65f
+Section: Networking
+Description: Telegram client for iOS 3 and newer
+Author: IllyaGIF
+Name: Onegram
+
+Package: dev.illyagif.onegram
+Version: 1.4.2-144
+Architecture: iphoneos-arm64
+Maintainer: IllyaGIF
+Depends: firmware (>= 15.0), uikittools
+Filename: debs/onegram_1.4.2-144_iphoneos-arm64.deb
+Size: 67693854
+MD5sum: bb9aa02bd28462fda5d0824414d1a1ba
+SHA1: 3ecd8edede796fb7f49aa040a48c0576629ae8a2
+SHA256: a298346ac8b29cb0661886f6b04b3413fc29e9a19e08b79634a2ec4934202c37
+Section: Networking
+Description: Telegram client for iOS 3 and newer
+Author: IllyaGIF
+Name: Onegram
+
