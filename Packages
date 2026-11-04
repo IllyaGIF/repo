@@ -72,3 +72,63 @@ MD5sum: 8bebe1a34a5b4a466c7670fa36388ad3
 SHA1: ae1b7dc9d6742266d47e0710372e28e2c1b8d78a
 SHA256: 9becf5101755e14ecfed9ddc7ca6e12d9855d3f12a471a971134f1c0c76b9482
 
+Package: dev.illyagif.onegram
+Name: Onegram
+Version: 1.4.4-147
+Architecture: iphoneos-arm64
+Description: Telegram client for iOS 3 and newer
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Networking
+Depends: firmware (>= 15.0), uikittools
+Filename: debs/onegram_1.4.4-147_iphoneos-arm64.deb
+Size: 68572756
+MD5sum: 1aaeba7ec3ae52e737de2c80aeb6279c
+SHA1: 2c8719430607d69b3d6383366610a21b9b6a4007
+SHA256: bf330bec4cc34c964b750fbc7ef55c5b0017fd32e0278e4e282dcd6e58ffea11
+
+Package: dev.illyagif.onegram
+Name: Onegram
+Version: 1.4.4-147
+Architecture: iphoneos-arm
+Description: Telegram client for iOS 3 and newer
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Networking
+Depends: firmware (>= 3.0), uikittools
+Filename: debs/onegram_1.4.4-147_iphoneos-arm.deb
+Size: 104512332
+MD5sum: ecf1427965da087077c776573d53f371
+SHA1: 982113bf85457a2ddd965158e5677cdc4531fb9c
+SHA256: 6b7d316c680d28ae9b2df258017ede8e665171881865954ac51309f1edd19a35
+
+Package: dev.illyagif.onegramd
+Name: Onegram Helper
+Version: 1.4.4
+Architecture: iphoneos-arm64
+Description: Onegram Helper: instant notifications, diagnostics and log access from Settings
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Tweaks
+Depends: firmware (>= 15.0), preferenceloader
+Filename: debs/onegramd_1.4.4_iphoneos-arm64.deb
+Size: 1238702
+MD5sum: 0b600c9f5ae7bf58816aa9d76204ca93
+SHA1: 9c5e0fb57e318bfe74aa2bcd369144fcfccb9fac
+SHA256: 53ee2ff9a6482981d65538e4fe6545fd911ebce2f30c764925ef1cfa58a40668
+
+Package: dev.illyagif.onegramd
+Name: Onegram Helper
+Version: 1.4.4
+Architecture: iphoneos-arm
+Description: Onegram Helper: instant notifications, diagnostics and log access from Settings
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Tweaks
+Depends: firmware (>= 3.0), preferenceloader
+Filename: debs/onegramd_1.4.4_iphoneos-arm.deb
+Size: 3756106
+MD5sum: 62d8d6ef7513b26a6dac02fe6b181467
+SHA1: 8fbc587795d96a598c924bd74ace0204ed5b15b2
+SHA256: eb9e1fa74a304ae7a3d3b24b8c61adc079f45b84bc4dc6ffd6f3c64c1e6d458d
+
