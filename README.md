@@ -1,5 +1,5 @@
 # Repo IllyaGIF
 
 ```text
-https://illyagif.github.io/repo/
+https://illyagif-repo.pages.dev/
 ```

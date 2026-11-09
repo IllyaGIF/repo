@@ -153,9 +153,9 @@ h1 {
     <span class="guide guide-five"></span>
     <a class="mark" href="https://github.com/IllyaGIF" title="IllyaGIF on GitHub" aria-label="IllyaGIF on GitHub"><span class="mark-dark"></span><span class="mark-red"></span></a>
     <div class="hero" id="hero">
-        <h1 id="heading"><a class="repository-url" id="repository-url" href="https://illyagif.github.io/repo/" title="Copy repository URL" onclick="return copyRepository();">https://illyagif.github.io/repo/<span class="red-dot"></span></a></h1>
+        <h1 id="heading"><a class="repository-url" id="repository-url" href="https://illyagif-repo.pages.dev/" title="Copy repository URL" onclick="return copyRepository();">https://illyagif-repo.pages.dev/<span class="red-dot"></span></a></h1>
         <p class="tagline">Original cydia repository IllyaGIF.</p>
-        <a class="cta" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://illyagif.github.io/repo/">ADD TO CYDIA &#8599;</a>
+        <a class="cta" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://illyagif-repo.pages.dev/">ADD TO CYDIA &#8599;</a>
         <span class="copy-status" id="copy-status" aria-live="polite">TAP THE URL TO COPY</span>
     </div>
 </div>
@@ -205,7 +205,7 @@ function copyOld(url) {
     }
 }
 function copyRepository() {
-    var url = 'https://illyagif.github.io/repo/';
+    var url = 'https://illyagif-repo.pages.dev/';
     if (navigator.clipboard && navigator.clipboard.writeText) {
         try {
             navigator.clipboard.writeText(url).then(function () {
