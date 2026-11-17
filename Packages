@@ -12,21 +12,6 @@ MD5sum: a47163698c0f7cd0769094da749e9d0e
 SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
 SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
 
-Package: dev.illyagif.onegram
-Name: Onegram
-Version: 1.4.4-147
-Architecture: iphoneos-arm64
-Description: Telegram client for iOS 3 and newer
-Maintainer: IllyaGIF
-Author: IllyaGIF
-Section: Networking
-Depends: firmware (>= 15.0), uikittools
-Filename: debs/onegram_1.4.4-147_iphoneos-arm64.deb
-Size: 92134982
-MD5sum: dfdb0a823bb490e15e6675c04806a708
-SHA1: de19772d30a608cfb719124cb8026d75d774cbf5
-SHA256: 76202ed609048aaecc0ed008a4afd7bd8d6a122a0764d229b3db70323bc13079
-
 Package: dev.illyagif.onegramd
 Name: Onegram Helper
 Version: 1.4.4
