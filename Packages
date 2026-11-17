@@ -12,3 +12,63 @@ MD5sum: a47163698c0f7cd0769094da749e9d0e
 SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
 SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
 
+Package: dev.illyagif.onegram
+Name: Onegram
+Version: 1.5-151
+Architecture: iphoneos-arm64
+Description: Telegram client for iOS 3 and newer
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Networking
+Depends: firmware (>= 15.0), uikittools
+Filename: debs/onegram_1.5-151_iphoneos-arm64.deb
+Size: 38219496
+MD5sum: f51464755cbc991b64ebb86bd1eeb9a9
+SHA1: 78995671e33fb3367d97a9cc41dcad1c38622c5c
+SHA256: 34d7c296b54f81d23e3af0625d8be71735e96bf2224eb5a7ff266693603cea84
+
+Package: dev.illyagif.onegram
+Name: Onegram
+Version: 1.5-151
+Architecture: iphoneos-arm
+Description: Telegram client for iOS 3 and newer
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Networking
+Depends: firmware (>= 3.0), uikittools
+Filename: debs/onegram_1.5-151_iphoneos-arm.deb
+Size: 79168322
+MD5sum: bc89348b1062242c8ae5365447ea550e
+SHA1: 98d18d4370618469739c9054cce826d02bce36e8
+SHA256: 56e9df8fb743b934840253aed484097cfd96b61240ecaa4cb94fb8903280543c
+
+Package: dev.illyagif.onegramd
+Name: Onegram Helper
+Version: 1.5
+Architecture: iphoneos-arm64
+Description: Onegram Helper: instant notifications, diagnostics and log access from Settings
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Tweaks
+Depends: firmware (>= 15.0), preferenceloader
+Filename: debs/onegramd_1.5_iphoneos-arm64.deb
+Size: 2225488
+MD5sum: 74248693d06b3ea43644bd0b5a479338
+SHA1: b19668c37974f615ecb68bb8009813adcd36f4d3
+SHA256: 09bdd27d8d77d838f4b4f4330c66ed81957f106d10177a43b28adaebcb4a0d49
+
+Package: dev.illyagif.onegramd
+Name: Onegram Helper
+Version: 1.5
+Architecture: iphoneos-arm
+Description: Onegram Helper: instant notifications, diagnostics and log access from Settings
+Maintainer: IllyaGIF
+Author: IllyaGIF
+Section: Tweaks
+Depends: firmware (>= 3.0), preferenceloader
+Filename: debs/onegramd_1.5_iphoneos-arm.deb
+Size: 6873850
+MD5sum: a2ee0150bcd73a56c346e0c34c472733
+SHA1: 173e6fce64027a8c5ed346684df772ba0ff865b1
+SHA256: 71fdb3afa4862c31b158bfd7d11ec3833fb18dbf1e4d107bcab43255587ff8a0
+
