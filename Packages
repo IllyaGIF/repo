@@ -12,18 +12,3 @@ MD5sum: a47163698c0f7cd0769094da749e9d0e
 SHA1: 419faef2d4f57f200da50828b9e7f858a423cf84
 SHA256: 9beec8b005e8ae6118fd12a8ab156ea05ec4c3e4c445da0077eee51df13bf662
 
-Package: dev.illyagif.onegramd
-Name: Onegram Helper
-Version: 1.4.4
-Architecture: iphoneos-arm64
-Description: Onegram Helper: instant notifications, diagnostics and log access from Settings
-Maintainer: IllyaGIF
-Author: IllyaGIF
-Section: Tweaks
-Depends: firmware (>= 15.0), preferenceloader
-Filename: debs/onegramd_1.4.4_iphoneos-arm64.deb
-Size: 1238702
-MD5sum: 0b600c9f5ae7bf58816aa9d76204ca93
-SHA1: 9c5e0fb57e318bfe74aa2bcd369144fcfccb9fac
-SHA256: 53ee2ff9a6482981d65538e4fe6545fd911ebce2f30c764925ef1cfa58a40668
-
